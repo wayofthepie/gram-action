@@ -1,0 +1,15 @@
+name: "Repository settings automation"
+description: "Automate github repo settings"
+inputs:
+  gram_cmd:
+    description: "The command"
+    required: true
+  gram_args:
+    description: "The args"
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.gram_cmd }}
+    - ${{ inputs.gram_args }}
