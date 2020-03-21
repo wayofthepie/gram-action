@@ -1,4 +1,4 @@
-name: "Repository settings automation"
+name: "Action wrapping the gram cli"
 description: "Automate github repo settings"
 inputs:
   token:
