@@ -1,11 +1,15 @@
 name: "Repository settings automation"
 description: "Automate github repo settings"
 inputs:
+  token:
+    description: "Github token for settings API access."
+    required: true
   diff:
-    description: "True if you want to diff stuff"
+    description: "True if you want to diff settings."
     required: true
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
+    - ${{ inputs.token }}
     - ${{ inputs.diff }}

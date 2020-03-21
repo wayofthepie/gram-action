@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-diff=$1
+token=$1
+diff=$2
 owner=${GITHUB_REPOSITORY%/*}
 repo=${GITHUB_REPOSITORY#*/}
 
 if [ "$diff" == "true" ]; then
-    gram -t "$ACTIONS_RUNTIME_TOKEN" \
+    gram -t "$token" \
         diff-settings \
         -o "$owner" \
         -r "$repo" \
