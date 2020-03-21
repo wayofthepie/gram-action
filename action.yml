@@ -1,5 +1,8 @@
 name: "Action wrapping the gram cli"
 description: "Automate github repo settings"
+branding:
+  icon: settings
+  color: purple
 inputs:
   token:
     description: "Github token for settings API access."
