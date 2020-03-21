@@ -1,0 +1,6 @@
+description = "Github action for the gram-cli"
+
+[options]
+allow-merge-commit = false
+allow-squash-merge = false
+allow-rebase-merge = true 
