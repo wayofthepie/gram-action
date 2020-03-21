@@ -1,4 +1,4 @@
-name: "Action wrapping the gram cli"
+name: "gram-cli"
 description: "Automate github repo settings"
 branding:
   icon: settings
